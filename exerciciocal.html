@@ -16,46 +16,41 @@
     <button onclick="dividirCom()"> / </button>
     <div id="output"> </div>
 
-    <script>
+<script>
       var n = prompt('Digite um número');
       n = parseFloat (n)
+
       var output = document.querySelector('#output');
-      var resultado = '';
-      resultado = parseFloat(resultado)
       output.innerHTML = n;
 
       function somarCom(){
         var soma = prompt('Digite um número para somar');
         soma = parseFloat(soma)
-        resultado = n + soma 
-        n = resultado
-        output.innerHTML = resultado
+        n = n + soma 
+        output.innerHTML = n
       }
 
       function diminuirCom(){
         var menos = prompt('Digite um número para diminuir');
         menos = parseFloat(menos)
-        resultado = n - menos 
-        n = resultado
-        output.innerHTML = resultado
+        n = n - menos 
+        output.innerHTML = n
       }
 
       
       function multiplicarCom(){
         var vezes = prompt('Digite um número para multiplicar');
         vezes = parseFloat(vezes)
-        resultado = n * vezes 
-        n = resultado
-        output.innerHTML = resultado
+        n = n * vezes
+        output.innerHTML = n
       }
 
           
       function dividirCom(){
         var dividir = prompt('Digite um número para dividir');
         dividir = parseFloat(dividir)
-        resultado = n / dividir 
-        n = resultado
-        output.innerHTML = resultado
+        n = n / dividir 
+        output.innerHTML = n
       }
 
 
