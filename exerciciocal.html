@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<!-- doctype informa ao agente de usuario a versão do html que deve ser renderizada-->
+<html lang="pt-br">
+  <head>
+    <title>pagina de exemplo estrutura basica</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Jéssica" />
+    <meta name="description" content="descrição bacanuda" />
+    <meta name="keywords" content="html5, tecnologia" />
+  </head>
+  <body>
+    <h1>Calculadora</h1>
+    <button onclick="somarCom()"> + </button>
+    <button onclick="diminuirCom()"> - </button>
+    <button onclick="multiplicarCom()"> * </button>
+    <button onclick="dividirCom()"> / </button>
+    <div id="output"> </div>
+
+    <script>
+      var n = prompt('Digite um número');
+      n = parseFloat (n)
+      var output = document.querySelector('#output');
+      var resultado = '';
+      resultado = parseFloat(resultado)
+      output.innerHTML = n;
+
+      function somarCom(){
+        var soma = prompt('Digite um número para somar');
+        soma = parseFloat(soma)
+        resultado = n + soma 
+        n = resultado
+        output.innerHTML = resultado
+      }
+
+      function diminuirCom(){
+        var menos = prompt('Digite um número para diminuir');
+        menos = parseFloat(menos)
+        resultado = n - menos 
+        n = resultado
+        output.innerHTML = resultado
+      }
+
+      
+      function multiplicarCom(){
+        var vezes = prompt('Digite um número para multiplicar');
+        vezes = parseFloat(vezes)
+        resultado = n * vezes 
+        n = resultado
+        output.innerHTML = resultado
+      }
+
+          
+      function dividirCom(){
+        var dividir = prompt('Digite um número para dividir');
+        dividir = parseFloat(dividir)
+        resultado = n / dividir 
+        n = resultado
+        output.innerHTML = resultado
+      }
+
+
+
+
+    </script>
+
+
+  </body>
+</html>
